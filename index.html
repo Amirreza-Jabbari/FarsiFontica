@@ -241,15 +241,6 @@
             // Determine font directory & filename
             let fontDir  = fontFamily;
             let fontPath = fontFamily;
-            if (fontFamily === 'FlowBold') {
-                fontDir = 'Flow';
-            } else if (fontFamily === 'Frutiger') {
-                fontDir = 'Fruitiger';
-            } else if (/^(Parastoo|Sahel)-/.test(fontFamily)) {
-                fontDir = fontFamily.split('-')[0];
-            } else if (/^(BNasimBold|BSinaBold|BTabassom)/.test(fontFamily)) {
-                fontPath = 'pixelboy-' + fontFamily;
-            }
 
             // Build the CSS snippet
             const repoBase = 'https://github.com/Amirreza-Jabbari/FarsiFontica/raw/main';
